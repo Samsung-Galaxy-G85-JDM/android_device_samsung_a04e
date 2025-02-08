@@ -18,7 +18,7 @@ $(call inherit-product, device/samsung/a04e/device.mk)
 $(call inherit-product, vendor/samsung/hq-camera/hqcamera-samsung-hs04.mk)
 
 TARGET_EXCLUDES_AUDIOFX := true
-
+WITH_GMS := true
 PRODUCT_DEVICE := a04e
 PRODUCT_NAME := lineage_a04e
 PRODUCT_BRAND := Samsung
