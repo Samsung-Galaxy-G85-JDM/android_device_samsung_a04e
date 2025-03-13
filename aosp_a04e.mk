@@ -9,7 +9,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/alpha/config/common_full_phone.mk)
 
 # Inherit from a05m device
 $(call inherit-product, device/samsung/a04e/device.mk)
@@ -25,8 +25,13 @@ PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := Galaxy A04e
 PRODUCT_MANUFACTURER := samsung
 
-TARGET_BOOT_ANIMATION_RES := 720
 WITH_GMS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+WITH_GMS := true
+TARGET_BUILD_PACKAGE := 3
+
+# Maintainer
+ALPHA_MAINTAINER := Smiley_9000
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung-ss
 
