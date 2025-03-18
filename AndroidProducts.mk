@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_a04e.mk
+    $(LOCAL_DIR)/lineage_a04e.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_a04e-user \
-    derp_a04e-userdebug \
-    derp_a04e-eng
+    lineage_a04e-user \
+    lineage_a04e-userdebug \
+    lineage_a04e-eng
